@@ -92,13 +92,13 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 ## 🖼️ Screenshots
 
 ### 🧪 Sandbox Behavior
-![Sandbox Overview](./screenshots/sandbox-overview.png)
+![Sandbox Overview](https://github.com/ziggsanon/digital-forensics-mini-case/blob/main/screenshots/sandbox-overview.JPG) 
 
 ### 🔍 Dropped Files & Registry Persistence
-![Dropped Files & Registry Persistence](./screenshots/dropped-files-&-registry-persistence.png)
+![Dropped Files & Registry Persistence](https://github.com/ziggsanon/digital-forensics-mini-case/blob/main/screenshots/dropped%20files%20%26%20registry%20persistence.JPG)
 
 ### 🔍 IOCs Preview - Domains, IPs, Files
-![IOCs Preview](./screenshots/IOCs-preview-domains,contacted-IPs,files.png)
+![IOCs Preview](screenshots/sandbox-overview.JPG)
 
 ---
 
