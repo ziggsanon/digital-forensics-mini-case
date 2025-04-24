@@ -89,6 +89,19 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 
 ---
 
+## 🖼️ Screenshots
+
+### 🧪 Sandbox Behavior
+![Sandbox Overview](./screenshots/sandbox-overview.png)
+
+### 🔍 Dropped Files & Registry Persistence
+![Dropped Files & Registry Persistence](./screenshots/dropped-files-&-registry-persistence.png)
+
+### 🔍 IOCs Preview - Domains, IPs, Files
+![IOCs Preview](./screenshots/IOCs-preview-domains,contacted-IPs,files.png)
+
+---
+
 ## 📂 Deliverables (In Progress)
 
 - Malware behavior summary (✅)
