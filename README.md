@@ -84,7 +84,6 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 
 - [VirusTotal](https://www.virustotal.com/)
 - [Any.Run](https://any.run/)
-- Wireshark
 - MITRE ATT&CK
 
 ---
