@@ -1,16 +1,16 @@
-# 💻 Digital Forensics Mini-Case – Malware-Based Investigation
+# Digital Forensics Mini-Case – Malware-Based Investigation
 
 A mini malware investigation focused on detecting malicious activity, persistence behavior, and Indicators of Compromise (IOCs) using open-source sandbox data.
 
 ---
 
-## 🧪 Summary
+## Summary
 
 This investigation involved behavioral analysis of a malware sample using VirusTotal’s sandbox. The malware attempted outbound communication, executed suspicious processes, dropped executable files, and made registry changes commonly linked to persistence mechanisms.
 
 ---
 
-## 🧠 Key Findings
+## Key Findings
 
 - **C2 Activity**: Outbound TCP connection to `46.19.141.202:8808 (go.gets-it.net)` suggests potential command-and-control behavior.
 - **Masqueraded Process**: Launched a suspicious updater from a non-standard directory, mimicking legitimate software to avoid detection.
@@ -23,7 +23,7 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 
 ---
 
-## 🧾 Indicators of Compromise (IOCs)
+## Indicators of Compromise (IOCs)
 
 | Type             | Value                                                                 |
 |------------------|-----------------------------------------------------------------------|
@@ -38,7 +38,7 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 
 ---
 
-## 🎯 MITRE ATT&CK Mapping
+## MITRE ATT&CK Mapping
 
 | Tactic               | Technique ID | Technique Name                           | Observation                                                                 |
 |----------------------|--------------|------------------------------------------|------------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 
 ---
 
-## 🛡️ Remediation & Defensive Recommendations
+## Remediation & Defensive Recommendations
 
 1. **Block Known IOCs**  
    - Block the domain `go.gets-it.net` and IP address `46.19.141.202` at the network firewall and DNS level.
@@ -80,7 +80,7 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 
 - [VirusTotal](https://www.virustotal.com/)
 - [Any.Run](https://any.run/)
@@ -88,20 +88,20 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
-### 🧪 Sandbox Behavior
+### Sandbox Behavior
 ![Sandbox Overview](https://github.com/ziggsanon/digital-forensics-mini-case/blob/main/screenshots/sandbox-overview.JPG) 
 
-### 🔍 Dropped Files & Registry Persistence
+### Dropped Files & Registry Persistence
 ![Dropped Files & Registry Persistence](https://github.com/ziggsanon/digital-forensics-mini-case/blob/main/screenshots/dropped%20files%20%26%20registry%20persistence.JPG)
 
-### 🔍 IOCs Preview - Domains, IPs, Files
+### IOCs Preview - Domains, IPs, Files
 ![IOCs Preview](screenshots/sandbox-overview.JPG)
 
 ---
 
-## 📂 Deliverables (In Progress)
+## Deliverables (In Progress)
 
 - Malware behavior summary (✅)
 - IOC table (✅)
