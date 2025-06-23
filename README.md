@@ -2,13 +2,9 @@
 
 A mini malware investigation focused on detecting malicious activity, persistence behavior, and Indicators of Compromise (IOCs) using open-source sandbox data.
 
----
-
 ## Summary
 
 This investigation involved behavioral analysis of a malware sample using VirusTotal’s sandbox. The malware attempted outbound communication, executed suspicious processes, dropped executable files, and made registry changes commonly linked to persistence mechanisms.
-
----
 
 ## Key Findings
 
@@ -20,8 +16,6 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 - **Registry Persistence Attempts**:
   - `HKCU\Software\Classes\Local Settings\MuiCache\79\52C64B7E\@%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe,-124`
   - `HKCU\Software\Classes\Local Settings\MuiCache\79\52C64B7E\@%SystemRoot%\system32\dnsapi.dll,-103`
-
----
 
 ## Indicators of Compromise (IOCs)
 
@@ -36,8 +30,6 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 | Process Path     | C:\Program Files\Google2088_1896458955\bin\updater.exe                |
 | Process Command  | --update --system --enable-logging                                    |
 
----
-
 ## MITRE ATT&CK Mapping
 
 | Tactic               | Technique ID | Technique Name                           | Observation                                                                 |
@@ -46,8 +38,6 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 | Persistence          | T1547.001    | Registry Run Keys / Startup Folder        | Registry changes made for PowerShell and DNSAPI DLL paths                   |
 | Defense Evasion      | T1036.005    | Masquerading: Match Legitimate Name or Location | Suspicious updater process mimicking Google in a non-standard directory |
 | Execution            | T1204.002    | User Execution: Malicious File            | Executable dropped to launch updater with suspicious flags                  |
-
----
 
 ## Remediation & Defensive Recommendations
 
@@ -78,15 +68,11 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 7. **Forensic Readiness**  
    - Ensure log retention and centralized log collection (e.g., Sentinel) for future forensic investigations.
 
----
-
 ## Tools Used
 
 - [VirusTotal](https://www.virustotal.com/)
 - [Any.Run](https://any.run/)
 - MITRE ATT&CK
-
----
 
 ## Screenshots
 
@@ -98,8 +84,6 @@ This investigation involved behavioral analysis of a malware sample using VirusT
 
 ### IOCs Preview - Domains, IPs, Files
 ![IOCs Preview](screenshots/sandbox-overview.JPG)
-
----
 
 ## Deliverables (In Progress)
 
